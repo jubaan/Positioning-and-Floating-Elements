@@ -1842,7 +1842,7 @@ figcaption {
 }
 
 .main-container {
-  width: 35%;
+  width: 43%;
   margin: 35px auto;
 }
 
@@ -1868,7 +1868,7 @@ figcaption {
 
 .round {
   height: 27px;
-  width:  27px;
+  width: 27px;
   padding: 5px;
   border-radius: 50%;
   background-color: #eee;
@@ -1879,7 +1879,6 @@ figcaption {
   box-shadow: inset 0 0 1px #999;
 }
 
-
 .main-article {
   font-family: 'nyt-imperial', sans-serif;
   font-weight: 400;
@@ -1889,6 +1888,81 @@ figcaption {
 }
 
 .main-article p {
+  margin-bottom: 20px;
+}
+.main-article h2 {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'nyt-imprerial', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  width: 945px;
+  margin: 0 auto;
+}
+
+.text-container h2 {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'nyt-cheltenham';
+}
+
+.text-container p {
+  width: 90%;
+  font-family: 'nyt-cheltenham-sh';
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.img-container {
+  width: 945px;
+  height: 576px;
+  background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
+    no-repeat;
+  background-size: 945px;
+  margin: 0 auto;
+}
+
+.img-container ul li {
+  width: 225px;
+  float: left;
+  margin-top: 150px;
+  font-size: 14px;
+  font-family: 'nyt-franklin';
+  font-weight: 300;
+  color:black;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+strong{
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.element {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "nyt-franklin";
+  text-align: center;
+  line-height: 1.4;
+}
+
+.element a {
+  color: #567b95;
+}
+.element-hr {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -1910,9 +1984,6 @@ figcaption {
 .article-footer a:hover {
   text-decoration: none;
 }
-
-
-
 
 .smallnav button {
   width: 328px;
@@ -1966,7 +2037,6 @@ nav ul li {
 .left,
 .center,
 .right {
-  /* border: 1px solid red; */
   height: 100%;
   line-height: 30px;
   vertical-align: sub;
