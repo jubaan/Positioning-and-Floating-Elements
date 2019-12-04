@@ -1920,11 +1920,12 @@ figcaption {
 
 .img-container {
   width: 945px;
-  height: 576px;
+  height: 500px;
   background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
     no-repeat;
   background-size: 945px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .img-container ul li {
