@@ -1842,8 +1842,17 @@ figcaption {
 }
 
 .main-container {
-  width: 43%;
+  width: 600px;
   margin: 35px auto;
+}
+
+.main-container p a {
+  color: #326cb6;
+  text-decoration: underline;
+}
+
+.main-container p a:hover {
+  text-decoration: none;
 }
 
 .smallnav {
@@ -1898,6 +1907,41 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.aside-container {
+  position: absolute;
+  width: 180px;
+  font-family: 'nyt-franklin';
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+  line-height: normal;
+  right: 13%;
+  top: 167%;
+}
+
+.aside-container h2{
+  font-family: 'nyt-franklin';
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+
+.aside-container  button {
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #326891;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.aside-container button:hover {
+  background-color: #2b5d83;
+}
+
 .text-container {
   width: 945px;
   margin: 0 auto;
@@ -1920,12 +1964,42 @@ figcaption {
 
 .img-container {
   width: 945px;
-  height: 500px;
+  height: 150px;
   background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
     no-repeat;
   background-size: 945px;
   margin: 0 auto;
-  object-fit: cover;
+}
+
+.img-container2 {
+  width: 945px;
+  height: 150px;
+  background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
+    no-repeat;
+  background-position-y: -415px;
+  background-size: 945px;
+  margin-top: 130px;
+  margin-bottom: 230px;
+} 
+
+.img-container2 ul li {
+  margin-bottom: 30px;
+}
+
+.image-author {
+  padding-top: 300px;
+}
+
+.image-author hr {
+  width: 50px;
+  margin-bottom: 20px;
+  
+}
+
+.image-author p {
+  font-family: 'nyt-franklin';
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .img-container ul li {
@@ -1945,6 +2019,81 @@ figcaption {
 strong{
   font-weight: 700;
   font-size: 11px;
+}
+
+.video-container {
+  margin-bottom: 40px;
+}
+
+.video-container figcaption {
+  font-family: 'nyt-imperial';
+  font-weight: 400;
+  font-size: 15px;
+  width: 90%;
+}
+
+.photo-container {
+  width: 720px;
+}
+
+.photo-container figcaption {
+  font-family: 'nyt-imperial';
+  font-weight: 400;
+  font-size: 15px;
+  width: 98%;
+}
+
+.photo-container img {
+  width:100%;
+}
+
+.aside2-container {
+  position: absolute;
+  width: 210px;
+  font-family: 'nyt-franklin';
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+  line-height: normal;
+  right: 11.3%;
+  top: 250%;
+}
+
+.aside2-container h2{
+  font-family: 'nyt-franklin';
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+
+.aside2-container figure {
+  width: 215px;
+  height: 90px;
+}
+
+.aside2-container img {
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+
+.aside2-container figcaption{
+  float: right;
+  font-family: 'nyt-cheltenham-small';
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 130px;
+  line-height: normal;
+}
+
+.aside2-container a {
+  color: #333;
+}
+
+.aside2-container a:hover, .aside2-container figcaption:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .element {
@@ -2004,6 +2153,53 @@ strong{
   background-color: #567b95;
   color: white;
 }
+
+/* More articles section */
+
+.more-news {
+  width: 1177px;
+  margin: 0 auto;
+}
+
+.more-news-articles {
+  width: 73%;
+  margin: 0 auto;
+  float: left;
+  border-top: 1px solid black;
+  
+}
+
+.more-news-articles-container {
+  width: 33%;
+  display: inline-block;
+  border-top: 1px solid black
+}
+
+.more-news-articles-container a {
+  margin: 0 auto;
+}
+
+.more-news-articles-container img {
+  width: 272.63px;
+  height: 181.75px;
+  padding: 15px 15px 0 0;
+}
+
+
+
+.more-news-links {
+  width: 24%;
+  height: 81px;
+  display: inline-block;
+  border-top: 1px solid black;
+  margin-left: 3%;
+}
+
+.more-news-links li {
+  padding: 15px 0;
+  border-top: 1px solid ##e2e2e2;
+}
+/* ------------ END More articles section ------------ */
 
 /* Footer */
 
