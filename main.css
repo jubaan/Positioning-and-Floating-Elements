@@ -2003,7 +2003,8 @@ figcaption {
 }
 
 .image-author {
-  padding-top: 15px;
+  clear:left;
+  margin-top: 500px;
 }
 
 .image-author hr {
@@ -2472,4 +2473,22 @@ footer a:hover {
   height: 25px;
 }
 
+.last-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.footer-last-ul {
+  display: inline-block;
+  margin: 30px 0;
+  font-family: 'nyt-franklin';
+  font-weight: 400;
+  font-size: 11px;
+  color: #666;
+}
+
+.footer-last-ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
 /* ------------ END Footer ------------ */
