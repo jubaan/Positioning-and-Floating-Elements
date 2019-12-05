@@ -1738,6 +1738,8 @@
 }
 
 /* ----------- END ----------- */
+
+/*  Main Navbar */
 header {
   position: fixed;
   width: 100%;
@@ -1746,8 +1748,7 @@ header {
 .main-nav {
   position: relative;
   margin: 0 auto;
-  height: 50px;
-  padding: 15px 25px;
+  height: 42px;
   border-bottom: 1px solid #e2e2e2;
   font-family: "nyt-franklin";
   background-color: white;
@@ -1776,6 +1777,10 @@ header {
   padding-right: 15px;
 }
 
+#space {
+  margin-top: 7px;
+}
+
 .float {
   text-align: center;
 }
@@ -1791,6 +1796,7 @@ header {
 
 #nyt-logo {
   height: 26.5px;
+  margin-top: 5px;
 }
 
 .center {
@@ -1798,20 +1804,22 @@ header {
 }
 
 .right button {
-  padding: 10px 15px;
-  margin-top: -30px;
   background-color: #326891;
   color: white;
   font-weight: bold;
   border-radius: 5px;
 }
 
+/* End of Main NavBar */
+
+/* Main Article */
+
 .main {
   padding-top: 120px;
 }
 
 .title {
-  width: 430px;
+  width: 600px;
   font-size: 40px;
   margin: 20px auto;
   line-height: 48px;
@@ -1855,6 +1863,8 @@ figcaption {
   text-decoration: none;
 }
 
+/* Start of SmallNav */
+
 .smallnav {
   display: inline-block;
   width: 100%;
@@ -1874,6 +1884,8 @@ figcaption {
 .smallnav ul {
   float: right;
 }
+
+/* End of SmallNav */
 
 .round {
   height: 27px;
@@ -1906,7 +1918,7 @@ figcaption {
   margin-top: 15px;
   margin-bottom: 10px;
 }
-
+/* Start of Aside */
 .aside-container {
   position: absolute;
   width: 180px;
@@ -1919,7 +1931,7 @@ figcaption {
   top: 167%;
 }
 
-.aside-container h2{
+.aside-container h2 {
   font-family: 'nyt-franklin';
   font-weight: 700;
   font-size: 18px;
@@ -1942,6 +1954,8 @@ figcaption {
   background-color: #2b5d83;
 }
 
+/* End of Aside */
+
 .text-container {
   width: 945px;
   margin: 0 auto;
@@ -1962,8 +1976,10 @@ figcaption {
   font-weight: 400;
 }
 
+/* Start Big Photo */
+
 .img-container {
-  width: 945px;
+  width: 970px;
   height: 150px;
   background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
     no-repeat;
@@ -1972,7 +1988,7 @@ figcaption {
 }
 
 .img-container2 {
-  width: 945px;
+  width: 970px;
   height: 150px;
   background: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
     no-repeat;
@@ -1980,20 +1996,19 @@ figcaption {
   background-size: 945px;
   margin-top: 130px;
   margin-bottom: 230px;
-} 
+}
 
 .img-container2 ul li {
   margin-bottom: 30px;
 }
 
 .image-author {
-  padding-top: 300px;
+  padding-top: 15px;
 }
 
 .image-author hr {
   width: 50px;
   margin-bottom: 20px;
-  
 }
 
 .image-author p {
@@ -2009,14 +2024,18 @@ figcaption {
   font-size: 14px;
   font-family: 'nyt-franklin';
   font-weight: 300;
-  color:black;
+  color: black;
+}
+
+.edit {
+  clear: left;
 }
 
 .margin-right {
   margin-right: 15px;
 }
 
-strong{
+strong {
   font-weight: 700;
   font-size: 11px;
 }
@@ -2044,8 +2063,12 @@ strong{
 }
 
 .photo-container img {
-  width:100%;
+  width: 100%;
 }
+
+/* End Big Photo */
+
+/* Start of Aside2 */
 
 .aside2-container {
   position: absolute;
@@ -2059,7 +2082,7 @@ strong{
   top: 250%;
 }
 
-.aside2-container h2{
+.aside2-container h2 {
   font-family: 'nyt-franklin';
   font-weight: 700;
   font-size: 18px;
@@ -2077,7 +2100,7 @@ strong{
   float: left;
 }
 
-.aside2-container figcaption{
+.aside2-container figcaption {
   float: right;
   font-family: 'nyt-cheltenham-small';
   font-weight: 500;
@@ -2091,11 +2114,13 @@ strong{
   color: #333;
 }
 
-.aside2-container a:hover, .aside2-container figcaption:hover {
+.aside2-container a:hover,
+.aside2-container figcaption:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
+/* End of Second Aside */
 .element {
   width: 40%;
   margin: 0 auto;
@@ -2154,51 +2179,122 @@ strong{
   color: white;
 }
 
+/* End of Main Article */
+
 /* More articles section */
 
 .more-news {
-  width: 1177px;
+  width: 1200px;
+  height: 1026px;
   margin: 0 auto;
 }
-
 .more-news-articles {
-  width: 73%;
-  margin: 0 auto;
+  width: 852px;
   float: left;
+}
+.more-and-space {
+  padding-top: 15px;
   border-top: 1px solid black;
-  
+  width: 100%;
 }
-
-.more-news-articles-container {
-  width: 33%;
-  display: inline-block;
-  border-top: 1px solid black
-}
-
-.more-news-articles-container a {
-  margin: 0 auto;
-}
-
-.more-news-articles-container img {
-  width: 272.63px;
-  height: 181.75px;
-  padding: 15px 15px 0 0;
-}
-
-
 
 .more-news-links {
-  width: 24%;
-  height: 81px;
-  display: inline-block;
   border-top: 1px solid black;
-  margin-left: 3%;
+  width: 318px;
+  float: right;
+  padding-top: 15px;
 }
 
-.more-news-links li {
-  padding: 15px 0;
-  border-top: 1px solid ##e2e2e2;
+.more-news-links ul li {
+  font-family: 'nyt-cheltenham';
+  font-weight: 500;
+  font-size: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e2e2e2;
 }
+
+.more-news-links ul {
+  padding-top: 20px;
+}
+
+.more-news-links a {
+  color: #666;
+}
+
+.more-news-links a:hover {
+  color: #b5b5b5;
+}
+
+.little-container {
+  width: 272px;
+  float: left;
+}
+
+.little-container img {
+  width: 100%;
+}
+
+.little-container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'nyt-cheltenham';
+  color: #666;
+}
+
+.more-news-h2 {
+  font-family: 'nyt-franklin';
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+
+.little-container figcaption {
+  width: 100%;
+  font-size: 10px;
+  font-family: 'nyt-cheltenham-small';
+  font-weight: 400;
+  color: #999;
+  text-align: right;
+}
+
+.little-container small {
+  font-family: 'nyt-franklin';
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  letter-spacing: 0.3px;
+}
+
+.little-container h2:hover {
+  color: #b5b5b5;
+}
+
+.float-right {
+  float: right;
+}
+
+.margin-right {
+  margin-right: 18px;
+}
+
+.bottom-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.editors-pick-videos {
+  clear: left;
+  width: 100%;
+  border-top: 1px solid black;
+  margin-top: 500px;
+  padding-top: 15px;
+}
+
+.empty {
+  margin-bottom: 23px;
+}
+
 /* ------------ END More articles section ------------ */
 
 /* Footer */
@@ -2303,7 +2399,7 @@ nav button {
 
 footer {
   line-height: 22px;
-  width: 1177px;
+  width: 1200px;
   border-top: 2px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   margin: 15px auto;
