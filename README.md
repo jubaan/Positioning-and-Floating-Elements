@@ -6,6 +6,8 @@ The New York Times has been a leader in experimenting with the inclusion of mult
 
 In this project, our assigment was to copy "The New York Times" official webpage.
 
+![Screenshot 2019-12-06 at 1 14 01 AM](https://user-images.githubusercontent.com/50610396/70282190-d4898580-17c5-11ea-83a1-a0b15cbc7c30.png)
+
 ## Built With
 
 - HTML5 & CSS3
