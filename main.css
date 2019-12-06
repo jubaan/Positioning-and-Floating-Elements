@@ -1874,12 +1874,14 @@
 
 /*  Main Navbar */
 header {
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .main-nav {
-  position: relative;
+  position: fixed;
   margin: 0 auto;
   height: 42px;
   border-bottom: 1px solid #e2e2e2;
@@ -1916,7 +1918,7 @@ nav ul li {
   display: inline-block;
 }
 
-.left li {
+.padding-right {
   padding-right: 15px;
   margin-right: 20px;
 }
@@ -2148,6 +2150,12 @@ footer a:hover {
 .round:hover {
   background-color: transparent;
   box-shadow: inset 0 0 1px #999;
+}
+
+.bubble-img {
+  height: 27px;
+  width: 34px;
+  padding-top: 2px;
 }
 
 .main-article {
@@ -2496,12 +2504,10 @@ nav {
   padding: 4px 15px 2px;
 }
 
-.left,
 .center,
 .right {
   height: 100%;
   line-height: 30px;
-  vertical-align: sub;
 }
 
 .float .left {
