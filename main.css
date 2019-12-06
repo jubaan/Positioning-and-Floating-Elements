@@ -1,0 +1,839 @@
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src:
+    url('/fonts/family/cheltenham/cheltenham-italic-700.f99a0459024509f157a3352e5de4f873.woff2')
+    format('woff2'),
+    url('/fonts/family/cheltenham/cheltenham-italic-700.d53eaf3b784c4b50d1c331e1278cda67.woff')
+    format('woff'),
+    url('/fonts/family/cheltenham/cheltenham-italic-700.c690b74328fddd7feff3bc4c1c1a0cd8.ttf')
+    format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-small';
+  src:
+    url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.108ce298d451197b23fefceb3e36959f.woff2')
+    format('woff2'),
+    url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.9dfa21a5aff2f7bdf7b929b8967700bd.woff')
+    format('woff'),
+    url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.8b8141b3a4ec5c4f8028ee735f8c3107.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src:
+    url('/fonts/family/franklin/franklin-normal-300.bc7be4c5d8cacb780f896c5cbe0c0d7f.woff2')
+    format('woff2'),
+    url('/fonts/family/franklin/franklin-normal-300.173315ff36fdf628bbfbabac0c03a76d.woff')
+    format('woff'),
+    url('/fonts/family/franklin/franklin-normal-300.d1bf0bccfda41b1a77ea392b7a26d4cf.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src:
+    url('/fonts/family/franklin/franklin-normal-500.d6c06a3d84a57100edad5bf9b84ff739.woff2')
+    format('woff2'),
+    url('/fonts/family/franklin/franklin-normal-500.414758de098dc644b688afa031d35f9b.woff')
+    format('woff'),
+    url('/fonts/family/franklin/franklin-normal-500.1b6dc8a3d86d2a28b825482c9497a633.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src:
+    url('/fonts/family/franklin/franklin-normal-700.b44c88f09ca7ce914b836d4ae72891b8.woff2')
+    format('woff2'),
+    url('/fonts/family/franklin/franklin-normal-700.a192db310935d8a882832e2cc83f2119.woff')
+    format('woff'),
+    url('/fonts/family/franklin/franklin-normal-700.aaec3c198ea6e3efd97b2b19823bf861.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src:
+    url('/fonts/family/imperial/imperial-normal-400.2531995fefd3b997f9c4d564ebe89268.woff2')
+    format('woff2'),
+    url('/fonts/family/imperial/imperial-normal-400.e4d8bd522cfcbc36c1b2368baeb54c32.woff')
+    format('woff'),
+    url('/fonts/family/imperial/imperial-normal-400.a5270edf37ca346207a3a6ff637a022a.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Reset rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ----------- END ----------- */
+
+/*  Main Navbar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.main-nav {
+  position: fixed;
+  margin: 0 auto;
+  height: 42px;
+  border-bottom: 1px solid #e2e2e2;
+  font-family: "nyt-franklin", sans-serif;
+  background-color: white;
+}
+
+footer a {
+  width: 150px;
+  color: black;
+  font-family: "nyt-franklin", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.article-footer a {
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.more-news-links a {
+  color: #666;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.padding-right {
+  padding-right: 15px;
+  margin-right: 20px;
+}
+
+.right li {
+  margin-left: 20px;
+}
+
+.footer-last-ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.main-nav ul li {
+  display: inline-block;
+}
+
+.aside2-container a {
+  color: #333;
+}
+
+.element a {
+  color: #567b95;
+}
+
+.hd-footer a {
+  font-size: 11px;
+  cursor: pointer;
+  font-family: "nyt-franklin", sans-serif;
+  width: auto;
+}
+
+.main-nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.left {
+  float: left;
+  font-size: 10px;
+}
+
+#space {
+  margin-top: 7px;
+}
+
+.float {
+  text-align: center;
+}
+
+.float::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+#nyt-logo {
+  height: 26.5px;
+  margin-top: 5px;
+}
+
+.center {
+  margin-top: 20px;
+}
+
+nav button {
+  background-color: #567b95;
+  border: 1px solid #326891;
+  padding: 11px 12px 8px 12px;
+  color: white;
+  border-radius: 3px;
+  font-family: "nyt-franklin", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+}
+
+.button {
+  background-color: #326891;
+  color: white !important;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 11px 12px 8px;
+}
+
+/* End of Main NavBar */
+
+/* Main Article */
+
+.main {
+  padding-top: 120px;
+}
+
+.title {
+  width: 600px;
+  font-size: 40px;
+  margin: 20px auto;
+  line-height: 48px;
+  font-family: "nyt-cheltenham", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+figure {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+figcaption {
+  width: 70%;
+  font-family: "nyt-imperial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #666;
+  word-spacing: 3px;
+}
+
+.main-container {
+  width: 600px;
+  margin: 35px auto;
+}
+
+.main-container p a {
+  color: #326cb6;
+  text-decoration: underline;
+}
+
+.little-container figcaption {
+  width: 100%;
+  font-size: 10px;
+  font-family: 'nyt-cheltenham-small', sans-serif;
+  font-weight: 400;
+  color: #999;
+  text-align: right;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.video-container figcaption {
+  font-family: 'nyt-imperial', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 90%;
+}
+
+.photo-container figcaption {
+  font-family: 'nyt-imperial', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 98%;
+}
+
+.aside2-container figcaption {
+  float: right;
+  font-family: 'nyt-cheltenham-small', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 130px;
+  line-height: normal;
+}
+
+.aside2-container a:hover,
+.aside2-container figcaption:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article-footer a:hover {
+  text-decoration: none;
+}
+
+.more-news-links a:hover {
+  color: #b5b5b5;
+}
+
+.main-container p a:hover {
+  text-decoration: none;
+}
+
+/* Start of SmallNav */
+
+.smallnav {
+  display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.smallnav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.date {
+  float: left;
+}
+
+.smallnav ul {
+  float: right;
+}
+
+/* End of SmallNav */
+
+.round {
+  height: 27px;
+  width: 27px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.round:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 1px #999;
+}
+
+.bubble-img {
+  height: 27px;
+  width: 34px;
+  padding-top: 2px;
+}
+
+.main-article {
+  font-family: 'nyt-imperial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5em;
+}
+
+.main-article p {
+  margin-bottom: 20px;
+}
+
+footer h2 {
+  font-family: "nyt-franklin", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+
+.main-article h2 {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'nyt-imprerial', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Start of Aside */
+.aside-container {
+  position: absolute;
+  width: 180px;
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+  line-height: normal;
+  right: 13%;
+  top: 167%;
+}
+
+.aside-container h2 {
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+
+.aside-container button {
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #326891;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.smallnav button {
+  width: 328px;
+  background-color: #567b95;
+  color: white;
+  font-family: 'nyt-franklin', sans-serif;
+  font-size: 13px;
+  padding: 10px 0 20px 0;
+  border-radius: 3px;
+  border: none;
+  font-weight: 700;
+  height: 24px;
+}
+
+.aside-container button:hover {
+  background-color: #2b5d83;
+}
+
+/* End of Aside */
+
+.text-container {
+  width: 945px;
+  margin: 0 auto;
+}
+
+.text-container h2 {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'nyt-cheltenham', sans-serif;
+}
+
+.text-container p {
+  width: 90%;
+  font-family: 'nyt-cheltenham', sans-serif;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Start Big Photo */
+
+.img-container {
+  width: 970px;
+  height: 150px;
+  background:
+    url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
+    no-repeat;
+  background-size: 945px;
+  margin: 0 auto;
+}
+
+.img-container2 {
+  width: 970px;
+  height: 150px;
+  background:
+    url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-720.png')
+    no-repeat;
+  background-position-y: -415px;
+  background-size: 945px;
+  margin-top: 130px;
+  margin-bottom: 230px;
+}
+
+.img-container2 ul li {
+  margin-bottom: 30px;
+}
+
+.image-author {
+  clear: left;
+  margin-top: 500px;
+}
+
+.image-author hr {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.image-author p {
+  font-family: 'nyt-franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.img-container ul li {
+  width: 225px;
+  float: left;
+  margin-top: 150px;
+  font-size: 14px;
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.edit {
+  clear: left;
+}
+
+.margin-right {
+  margin-right: 18px;
+}
+
+strong {
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.video-container {
+  margin-bottom: 40px;
+}
+
+.photo-container {
+  width: 720px;
+}
+
+.photo-container img {
+  width: 100%;
+}
+
+/* End Big Photo */
+
+/* Start of Aside2 */
+
+.aside2-container {
+  position: absolute;
+  width: 210px;
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+  line-height: normal;
+  right: 11.3%;
+  top: 250%;
+}
+
+.aside2-container h2 {
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+
+.aside2-container figure {
+  width: 215px;
+  height: 90px;
+}
+
+.aside2-container img {
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+
+/* End of Second Aside */
+.element {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "nyt-franklin", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.element-hr {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article-footer {
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: normal;
+}
+
+/* End of Main Article */
+
+/* More articles section */
+
+.more-news {
+  width: 1200px;
+  height: 1026px;
+  margin: 0 auto;
+}
+
+.more-news-articles {
+  width: 852px;
+  float: left;
+}
+
+.more-and-space {
+  padding-top: 15px;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.more-news-links {
+  border-top: 1px solid black;
+  width: 318px;
+  float: right;
+  padding-top: 15px;
+}
+
+.more-news-links ul li {
+  font-family: 'nyt-cheltenham', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.more-news-links ul {
+  padding-top: 20px;
+}
+
+.little-container {
+  width: 272px;
+  float: left;
+}
+
+.little-container img {
+  width: 100%;
+}
+
+.little-container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'nyt-cheltenham', sans-serif;
+  color: #666;
+}
+
+.more-news-h2 {
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+
+.little-container small {
+  font-family: 'nyt-franklin', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  letter-spacing: 0.3px;
+}
+
+.little-container h2:hover {
+  color: #b5b5b5;
+}
+
+.float-right {
+  float: right;
+}
+
+.bottom-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.editors-pick-videos {
+  clear: left;
+  width: 100%;
+  border-top: 1px solid black;
+  margin-top: 500px;
+  padding-top: 15px;
+}
+
+.empty {
+  margin-bottom: 23px;
+}
+
+/* ------------ END More articles section ------------ */
+
+/* Footer */
+
+nav {
+  height: 42px;
+  border-bottom: 1px solid #e2e2e2;
+  display: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4px 15px 2px;
+}
+
+.center,
+.right {
+  height: 100%;
+  line-height: 30px;
+}
+
+.float .left {
+  float: left;
+}
+
+.float .center {
+  margin: 0 auto;
+  position: relative;
+}
+
+.float .right {
+  float: right;
+}
+
+.nav-icon {
+  height: 16px;
+  vertical-align: sub;
+  width: 16px;
+}
+
+.nyt-logo {
+  height: 80%;
+}
+
+.page-ref {
+  font-family: "nyt-franklin", sans-serif;
+  font-weight: 700;
+  color: #333;
+  font-size: 14.25px;
+}
+
+.float-left {
+  float: left;
+  max-width: 193.6px;
+  width: 100%;
+}
+
+.footer-icon {
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+}
+
+footer {
+  line-height: 22px;
+  width: 1200px;
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 15px auto;
+  height: 410px;
+}
+
+.small-text {
+  font-family: "nyt-franklin", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.vertical-division {
+  border-right: 1px solid #e2e2e2;
+}
+
+.horizontal-division {
+  height: 0;
+  border-top: 0;
+  border-color: #e2e2e2;
+  width: 100%;
+  margin: 3px 0 5px;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
+.icon-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hd-footer {
+  margin: 1px 0 15px 0;
+  padding-top: 10px;
+  border-top: 1px solid #e2e2e2;
+  width: 100%;
+}
+
+.nyt-logo-footer {
+  height: 25px;
+}
+
+.last-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.footer-last-ul {
+  display: inline-block;
+  margin: 30px 0;
+  font-family: 'nyt-franklin', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #666;
+}
+
+/* ------------ END Footer ------------ */
